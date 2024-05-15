@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Línea de Tiempo</title>
 <style>
-    body {
+body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
@@ -15,153 +15,64 @@
         max-width: 800px;
         margin: 50px auto;
         padding: 20px;
-        background: #f4f4f4;
-        border-radius: 10px;
+        list-style: none;
     }
     .event {
         position: relative;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
     .event .date {
-        position: absolute;
-        top: -20px;
-        left: 50%;
-        transform: translateX(-50%);
-        background: #333;
-        color: #fff;
-        padding: 5px 10px;
-        border-radius: 5px;
+        font-weight: bold;
+        margin-bottom: 10px;
     }
     .event .content {
-        background: #fff;
+        background: #f4f4f4;
         padding: 20px;
         border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    .event .content:hover {
+        transform: translateY(-5px);
     }
     .event .content img {
-        max-width: 100%;
+        width: 100%;
         height: auto;
+        border-radius: 5px;
         margin-bottom: 10px;
     }
 </style>
 </head>
 <body>
 
-<div class="timeline">
-    <div class="event">
-        <div class="date">13 de enero</div>
-        <div class="content">
-            <h2>salida a pedra cuachi</h2>
-            <p>javi, julio y yo</p>
-            <img src="IMG_20240113_071032330_HDR.jpg" alt="Imagen 1">
-        </div>
-    </div>
-    <div class="event">
-        <div class="date"></div>
-        <div class="content">
-            <h2></h2>
-            <p></p>
-            <img src="IMG_20240113_080034074_HDR.jpg" alt="Imagen 2">
-        </div>
-    </div>
-    <div class="timeline">
-        <div class="event">
+    <ul class="timeline">
+        <li class="event">
+            <div class="date">13 de enero</div>
+            <div class="content">
+                <h2>ida a piedra cuachi</h2>
+                <p>javi, julio y yo</p>
+                <img src="IMG_20240113_071032330_HDR.jpg" alt="Imagen 1">
+            </div>
+        </li>
+        <li class="event">
             <div class="date"></div>
             <div class="content">
-                <h2></h2>
-                <p></p>
-                <img src="20240113.jpg" alt="Imagen 1">
+                <img src="20240113.jpg" alt="Imagen 2">
             </div>
-        </div>
-        <div class="timeline">
-            <div class="event">
-                <div class="date"></div>
-                <div class="content">
-                    <h2></h2>
-                    <p></p>
-                    <img src="IMG_20240113_084507854_HDR.jpg" alt="Imagen 1">
-                </div>
+        </li>
+        <li class="event">
+            <div class="date"></div>
+            <div class="content">
+                <img src="IMG_20240113_080034074_HDR.jpg" alt="Imagen 2">
             </div>
-            <div class="timeline">
-                <div class="event">
-                    <div class="date"></div>
-                    <div class="content">
-                        <h2></h2>
-                        <p></p>
-                        <img src="IMG_20240113_102408086_HDR.jpg" alt="Imagen 1">
-                    </div>
-                </div>
-                <div class="timeline">
-                    <div class="event">
-                        <div class="date">21 de enero</div>
-                        <div class="content">
-                            <h2>fuimos al parque</h2>
-                            <p>a comer y a ver a los payasos en familia</p>
-                            <img src="IMG_20240121_182014827.jpg" alt="Imagen 1">
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <div class="event">
-                            <div class="date"></div>
-                            <div class="content">
-                                <h2></h2>
-                                <p></p>
-                                <img src="IMG_20240121_183100943.jpg" alt="Imagen 1">
-                            </div>
-                        </div>
-                        <div class="timeline">
-                            <div class="event">
-                                <div class="date"></div>
-                                <div class="content">
-                                    <h2></h2>
-                                    <p></p>
-                                    <img src="IMG_20240121_183351448.jpg" alt="Imagen 1">
-                                </div>
-                            </div>
-                            <div class="timeline">
-                                <div class="event">
-                                    <div class="date">26 de enero</div>
-                                    <div class="content">
-                                        <h2>fuimos a ver un partido</h2>
-                                        <p>juan y julio jugaron javi y yo nomas vimos</p>
-                                        <img src="IMG_20240126_213823518.jpg" alt="Imagen 1">
-                                    </div>
-                                </div>    <div class="timeline">
-                                    <div class="event">
-                                        <div class="date"></div>
-                                        <div class="content">
-                                            <h2></h2>
-                                            <p></p>
-                                            <img src="IMG_20240126_213827280.jpg" alt="Imagen 1">
-                                        </div>
-                                    </div>
-                                    <div class="timeline">
-                                        <div class="event">
-                                            <div class="date"></div>
-                                            <div class="content">
-                                                <h2></h2>
-                                                <p></p>
-                                                <img src="IMG_20240126_213927134.jpg" alt="Imagen 1">
-                                            </div>
-                                        </div>
-                                        <div class="timeline">
-                                            <div class="event">
-                                                <div class="date">29 de enero</div>
-                                                <div class="content">
-                                                    <h2>salida</h2>
-                                                    <p>fuimos por la beca de julio y comimos pizza</p>
-                                                    <img src="IMG_20240129_173114607_HDR.jpg" alt="Imagen 1">
-                                                </div>
-                                            </div>
-                                            <div class="timeline">
-                                                <div class="event">
-                                                    <div class="date"></div>
-                                                    <div class="content">
-                                                        <h2>comparando camara con su p30 lite de juan</h2>
-                                                        <p></p>
-                                                        <img src="IMG_20240129_175722152.jpg" alt="Imagen 1">
-                                                    </div>
-                                                </div>
-</div>
-
-</body>
-</html>
+        </li>
+        <li class="event">
+            <div class="date"></div>
+            <div class="content">
+                <img src="IMG_20240113_084507854_HDR.jpg" alt="Imagen 2">
+            </div>
+        </li>
+    </ul>
+    
+    </body>
+    </html>
